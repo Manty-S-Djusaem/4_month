@@ -1,6 +1,6 @@
 from django.contrib import admin
-from product.models import Vegetables
+from .models import PC
 
 # Register your models here.
 
-admin.site.register(Vegetables)
+admin.site.register(PC)

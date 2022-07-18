@@ -1,10 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Categories</title>
 </head>
-<body>
-$END$
+<body style='font-family: "Microsoft Sans Serif", sans-serif;'>
+<a href="http://127.0.0.1:8000/">back to main page</a>
+    <h2>Laptop categories</h2>
+    <div style="display: flex; justify-content: space-around; align-items: flex-start;">
+        {% for item in all_laptops %}
+            <div>
+                <h3>Name: {{ item.name }}</h3>
+                <p>Price: {{ item.price }}$</p>
+                <p>Memory: {{ item.memory }} GB</p>
+                <h4 style="width: 220px;">Description: {{ item.description }}</h4>
+
+                {% if item.is_available  %}
+                    <h4 style="color: green">Available</h4>
+                {% else %}
+                    <h4 style="color: red">Is not available</h4>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
 </body>
 </html>

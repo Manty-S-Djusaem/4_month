@@ -1,6 +1,6 @@
-*.pyc
+*.рус
 __pychache__/
 db.sqlite3
 venv
-4venv
+myvenv
 .idea/

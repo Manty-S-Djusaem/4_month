@@ -5,11 +5,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Product list</title>
 </head>
 <body>
-    {% for vegetable in all_vegetables %}
-        <div>{{ vegetable.name }}</div>
+    {% for item in all_laptops %}
+        <ul>
+            <li>{{item.name}}</li>
+            <li>{{item.memory}} GB</li>яя
+            <li>{{item.price}} som</li>
+        </ul>
     {% endfor %}
 </body>
 </html>
