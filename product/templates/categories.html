@@ -10,13 +10,28 @@
     <div style="display: flex; justify-content: space-around; align-items: flex-start;">
         {% for item in all_laptops %}
             <div>
-                <h3>Name: {{ item.name }}</h3>
-                <p>Price: {{ item.price }}$</p>
-                <p>Memory: {{ item.memory }} GB</p>
-                <h4 style="width: 220px;">Description: {{ item.description }}</h4>
+                <h3><a href="http://127.0.0.1:8000/RazerBlade15">{{ item.name }}</a></h3>
+                <p>Cell: {{ item.price }}49 990 р.</p>
+                <p>GPU: {{ item.price }}10GB</p>
+                <p>RAM:  {{ item.memory }} GB</p>
+
+                <h4 style="width: 220px;"><a href="http://127.0.0.1:8000/AsusROGZephyrusG14">AsusROGZephyrusG14</a></h4>
+                <p>Cell: {{ item.price }}90 000 р.</p>
+                <p>GPU: {{ item.price }}10GB</p>
+                <p>RAM:  {{ item.memory }}0GB</p>
+
+                <h4 style="width: 220px;"><a href="http://127.0.0.1:8000/RazerBlade14">RazerBlade14</a></h4>
+                <p>Cell: {{ item.price }}57 364 р.</p>
+                <p>GPU: {{ item.price }}3GB</p>
+                <p>RAM:  {{ item.memory }}4GB</p>
+
+                <h4 style="width: 220px;"><a href="http://127.0.0.1:8000/LenovoLegion5Pro">LenovoLegion5Pro</a></h4>
+                <p>Cell: {{ item.price }}95 390 р.</p>
+                <p>GPU: {{ item.price }}2GB</p>
+                <p>RAM:  {{ item.memory }}2GB</p>
 
                 {% if item.is_available  %}
-                    <h4 style="color: green">Available</h4>
+                    <h4 style="color: green">All Item Available</h4>
                 {% else %}
                     <h4 style="color: red">Is not available</h4>
                 {% endif %}
